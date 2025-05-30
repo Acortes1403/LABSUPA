@@ -1,0 +1,109 @@
+/* AIInterface.css — versión simplificada */
+
+.ai-interface {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.ai-header {
+  padding: 8px;
+  background: #f5f5f5;
+  border-bottom: 1px solid #dddddd;
+  cursor: default;
+}
+
+.terminal-dots {
+  display: none;  /* oculta los puntitos */
+}
+
+.terminal-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.ai-controls {
+  display: none;  /* oculta el streaming toggle y botón “Clear” */
+}
+
+.messages-container {
+  flex: 1;
+  padding: 8px;
+  background: #fafafa;
+  overflow-y: auto;
+  border: none;
+  margin: 0;
+}
+
+.message {
+  margin: 4px 0;
+}
+
+.message.user .message-content,
+.message.assistant .message-content {
+  background: #eaeaea;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.message.user .message-content {
+  background: #d0f0d0;
+  margin-left: auto;
+}
+
+.input-section {
+  padding: 8px;
+  background: #f5f5f5;
+  border-top: 1px solid #dddddd;
+}
+
+.input-container {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.input-prefix {
+  display: none;  /* oculta el prefijo “#” */
+}
+
+.terminal-input {
+  flex: 1;
+  padding: 6px;
+  font-size: 14px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  resize: none;
+}
+
+.execute-button {
+  padding: 6px 12px;
+  background: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.execute-button:disabled {
+  background: #99caff;
+  cursor: not-allowed;
+}
+
+/* Oculta la barra de estado final */
+.status-bar {
+  display: none;
+}

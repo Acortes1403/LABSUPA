@@ -1,0 +1,115 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light;
+  color: #000000;
+  background-color: #ece9d8;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #3a6ea5;
+  background-image: 
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 100px,
+      rgba(255, 255, 255, 0.05) 100px,
+      rgba(255, 255, 255, 0.05) 200px
+    );
+  position: relative;
+}
+
+#root {
+  position: relative;
+  width: 100%;
+}
+
+a {
+  font-weight: 400;
+  color: #0055e5;
+  text-decoration: underline;
+  transition: all 0.1s;
+}
+
+a:hover {
+  color: #003dac;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 3px;
+  border: 1px solid #003c74;
+  padding: 0.4em 0.8em;
+  font-size: 11px;
+  font-weight: normal;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #ffffff 0%, #e3e3e3 100%);
+  cursor: pointer;
+  color: #000000;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #ffffff 0%, #dcdcdc 100%);
+  border-color: #0078d7;
+}
+
+button:active {
+  background: linear-gradient(to bottom, #e3e3e3 0%, #ffffff 100%);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+button:focus {
+  outline: 1px dotted #000000;
+  outline-offset: 1px;
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e3e3e3;
+  border-left: 1px solid #8f8f8f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right, #ffffff 0%, #e3e3e3 20%, #e3e3e3 80%, #8f8f8f 100%);
+  border: 1px solid #8f8f8f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to right, #ffffff 0%, #d7d7d7 20%, #d7d7d7 80%, #8f8f8f 100%);
+}
+
+::-webkit-scrollbar-button {
+  background: linear-gradient(to bottom, #ffffff 0%, #e3e3e3 100%);
+  border: 1px solid #8f8f8f;
+  height: 16px;
+}
+
+::selection {
+  background: #3169c6;
+  color: #ffffff;
+}
